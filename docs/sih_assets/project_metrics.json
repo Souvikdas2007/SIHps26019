@@ -1,0 +1,77 @@
+{
+  "verified_at": "2026-09-11",
+  "source_database": "database/ps26019.db",
+  "metrics": {
+    "implemented_api_routes": {
+      "value": 6,
+      "unit": "routes",
+      "source": "backend/app.py: /api/health, /api/auth/login, /api/evidence, /api/analytics, /api/scenarios/run, /api/insights"
+    },
+    "database_migrations": {
+      "value": 3,
+      "unit": "migrations",
+      "source": "core/database/migrations/001_initial.sql, 002_dataset_profile_identifier.sql, 003_security_sessions.sql"
+    },
+    "datasets": {
+      "value": 1,
+      "unit": "database records",
+      "source": "database/ps26019.db, datasets table"
+    },
+    "dataset_versions": {
+      "value": 1,
+      "unit": "database records",
+      "source": "database/ps26019.db, dataset_versions table"
+    },
+    "regions": {
+      "value": 1,
+      "unit": "database records",
+      "source": "database/ps26019.db, regions table"
+    },
+    "landuse_observations": {
+      "value": 3,
+      "unit": "database records",
+      "source": "database/ps26019.db, landuse_observations table"
+    },
+    "documents": {
+      "value": 1,
+      "unit": "database records",
+      "source": "database/ps26019.db, documents table"
+    },
+    "indexed_document_chunks": {
+      "value": 3,
+      "unit": "database records",
+      "source": "database/ps26019.db, document_chunks table"
+    },
+    "roles": {
+      "value": 4,
+      "unit": "database records",
+      "source": "database/ps26019.db, roles table"
+    },
+    "users": {
+      "value": 5,
+      "unit": "database records",
+      "source": "database/ps26019.db, users table at capture time"
+    },
+    "scenario_runs_persisted": {
+      "value": 6,
+      "unit": "database records",
+      "source": "database/ps26019.db, scenario_runs table at capture time"
+    },
+    "foundation_tests": {
+      "value": 11,
+      "unit": "tests passing",
+      "source": "tests/test_foundation.py; python3 -m unittest discover -s tests -v"
+    },
+    "seeded_observation_count": {
+      "value": 3,
+      "unit": "observations",
+      "source": "scripts/seed_demo.py output and /api/analytics observation_count"
+    },
+    "live_llm_available": {
+      "value": false,
+      "unit": "boolean",
+      "source": "GET /api/health during asset capture"
+    }
+  },
+  "scope_note": "All database counts are local demo-state counts and may change when the demo is rerun. They are not national coverage or production performance metrics."
+}
